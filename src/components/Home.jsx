@@ -1,3 +1,5 @@
+import Resumebutton from "./Resumebutton";
+
 function Home() {
   return (
     <section className="pt-28 lg:pt-36">
@@ -22,7 +24,9 @@ function Home() {
           <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
             New to React, but Learning Fast—Fueled by Passion & Curiosity!
           </h2>
-          <div className="flex items-center gap-3">ButtonPrimary</div>
+          <div className="flex items-center gap-3">
+            <Resumebutton />
+          </div>
         </div>
         <div className="hidden lg:block">
           <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t from-gray-700 via-25% via-gray-400/40 to-65% rounded-[60px] overflow-hidden">

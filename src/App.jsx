@@ -4,16 +4,20 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Work from "./components/Work";
 import Navbar from "./components/Navbar";
+import Skills from "./components/Skills";
 
 function App() {
   return (
-    <div className="w-full h-full absolute">
+    <div className="absolute w-full h-full">
       <Navbar />
       <Element name="home">
         <Home />
       </Element>
       <Element name="about">
         <About />
+      </Element>
+      <Element name="skills">
+        <Skills />
       </Element>
       <Element name="work">
         <Work />

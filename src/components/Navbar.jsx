@@ -5,13 +5,13 @@ function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="flex justify-between items-center py-6 px-8 md:px-32 bg-[#A8A9AD] drop-shadow-md">
+    <header className="flex fixed top-0 left-0 w-full z-50 justify-between items-center py-6 px-8 md:px-32 bg-[#A8A9AD] drop-shadow-md">
       <div>
         <img src="/images/logo.png" alt="" className="w-[9rem]" />
       </div>
 
       {/* Desktop Menu */}
-      <ul className="hidden xl:flex items-center gap-12 font-semibold text-base">
+      <ul className="items-center hidden gap-12 text-base font-semibold xl:flex">
         <li>
           <Link
             className="p-3 hover:bg-[#3A3B3C] hover:text-white rounded-md transition-all cursor-pointer"
@@ -35,6 +35,16 @@ function Navbar() {
         <li>
           <Link
             className="p-3 hover:bg-[#3A3B3C] hover:text-white rounded-md transition-all cursor-pointer"
+            to="skills"
+            smooth={true}
+            duration={500}
+          >
+            Skills
+          </Link>
+        </li>
+        <li>
+          <Link
+            className="p-3 hover:bg-[#3A3B3C] hover:text-white rounded-md transition-all cursor-pointer"
             to="work"
             smooth={true}
             duration={500}
@@ -45,7 +55,7 @@ function Navbar() {
       </ul>
 
       {/* Contact Button (Desktop) */}
-      <div className="relative hidden md:flex items-center justify-center gap-3">
+      <div className="relative items-center justify-center hidden gap-3 md:flex">
         <button className="ml-auto bg-[#3A3B3C] px-6 py-2 rounded-xl text-white font-medium hover:bg-[#5A5B5C] transition duration-300">
           <Link
             className="cursor-pointer"
@@ -60,7 +70,7 @@ function Navbar() {
 
       {/* Hamburger Icon */}
       <i
-        className="bx bx-menu xl:hidden block text-5xl cursor-pointer"
+        className="block text-5xl cursor-pointer bx bx-menu xl:hidden"
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       ></i>
 
@@ -91,6 +101,16 @@ function Navbar() {
               onClick={() => setIsMenuOpen(false)}
             >
               About
+            </Link>
+          </li>
+          <li className="list-none w-full text-center p-4 hover:bg-[#3A3B3C] hover:text-white transition-all cursor-pointer">
+            <Link
+              to="skills"
+              smooth={true}
+              duration={500}
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Skills
             </Link>
           </li>
           <li className="list-none w-full text-center p-4 hover:bg-[#3A3B3C] hover:text-white transition-all cursor-pointer">
