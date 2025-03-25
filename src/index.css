@@ -6,7 +6,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  @apply bg-myCustomColor text-white; /* Uses the custom color */
+  @apply text-white bg-myCustomColor; /* Uses the custom color */
 }
 
 .container {
@@ -14,11 +14,11 @@ body {
 }
 
 .img-box {
-  @apply bg-zinc-700 overflow-hidden;
+  @apply overflow-hidden bg-zinc-700;
 }
 
 .img-cover {
-  @apply w-full h-full object-cover;
+  @apply object-cover w-full h-full;
 }
 
 .headline-1 {
@@ -28,8 +28,19 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+.headline-2 {
+  @apply max-w-max;
+  background: -webkit-linear-gradient(0deg, #fafafa, #a1a1aa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .headline-1 {
   @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1.15];
+}
+
+.headline-2 {
+  @apply text-3xl font-semibold lg:text-4xl lg:leading-tight;
 }
 
 .section {
