@@ -2,13 +2,12 @@ function About() {
   return (
     <section className="section">
       <div className="container">
-        <div className="bg-zinc-800/50  p-7 rounded-2xl md:p-12">
+        <div className="bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up">
           <p className="text-zinc-200 mb-4 md:mb-8 md:text-xl md:max-w-[60ch]">
             Welcome! I'm Gjergji, and my journey into web development began a
             year ago when I started learning JavaScript. From the very first
             line of code, I was hooked. <br />
-            <br />
-            I quickly realized that programming isn’t just about solving
+            <br />I quickly realized that programming isn’t just about solving
             problems—it’s about building, creating, and constantly evolving.{" "}
             <br />
             <br />

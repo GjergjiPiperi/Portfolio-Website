@@ -6,8 +6,8 @@ function Skills() {
   return (
     <section className="section">
       <div className="container">
-        <h2 className="headline-2">Essential Tools I use</h2>
-        <p className="mt-3 mb-8 text-zinc-400 ">
+        <h2 className="headline-2 reveal-up">Essential Tools I use</h2>
+        <p className="mt-3 mb-8 text-zinc-400 reveal-up">
           Explore the tools and technologies I have learned, as well as those I
           am currently mastering, to create innovative and high-quality web
           applications.
@@ -19,7 +19,7 @@ function Skills() {
               {frontendSkills.map((tech) => (
                 <span
                   key={tech}
-                  className="py-1 text-sm text-zinc-200 rounded-full bg-zinc-200/10 px-3 hover:bg-zinc-200/20 hover:shadow-[0_2px_8px_rgba(168,169,173,0.2)] transition"
+                  className="py-1 text-sm text-zinc-200 rounded-full bg-zinc-200/10 px-3 hover:bg-zinc-200/20 hover:shadow-[0_2px_8px_rgba(168,169,173,0.2)] transition reveal-up"
                 >
                   {tech}
                 </span>
